@@ -1,24 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import PhoneBook from './components/PhoneBook';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+      <div
+        style={{
+          backgroundColor: "steelblue",
+          color: "white",
+          marginBottom: 16
+        }}
+      >
+        <h1
+          style={{
+            margin: "auto",
+            width: "fit-content",
+            height: 100,
+            display: "flex",
+            alignItems: "center"
+          }}
         >
-          Learn React
-        </a>
-      </header>
+          HELLO REACT RENDER
+        </h1>
+      </div>
+      <PhoneBook />
     </div>
   );
 }
